@@ -1,0 +1,61 @@
+# Gitignore for a Python/Django project with Hugging Face models
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# C extensions
+*.so
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+
+# Environments
+.env
+.venv
+env/
+venv/
+
+# Django stuff
+*.log
+db.sqlite3
+db.sqlite3-journal
+
+# Generated media files
+# It's good practice to ignore user-uploaded or generated content.
+/static/generated_image.png
+
+# IDE configuration files
+.idea/
+.vscode/
+
+# OS-generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.coverage
+.coverage.*
+.cache
+.pytest_cache/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# Installer logs
+pip-log.txt
+
+# Hugging Face cache
+# This is very important to prevent committing gigabytes of model data.
+.cache/huggingface/
